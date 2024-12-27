@@ -2,7 +2,10 @@
 # или составное число, автор Алексей
 
 
-n = int('введите число которое хотите узнать: ',input()) # вводим число
+
+
+
+
 # the main function of project
 def is_prime(n):
     d = 2 # присваиваем значение d
@@ -10,9 +13,17 @@ def is_prime(n):
         d += 1 # доходим до самого n
        
     return d == n # если мы дошли до числа n то число простое
-result = is_prime(n)
-print('false - число составное, true - число простое:',result)#  ввывод чисел
 
 
-if __name__=="__main__":
+def main():
+    n = int(input('введите число которое хотите узнать: ')) # вводим число
+    
+    result = is_prime(n)
+    print('false - число составное, true - число простое:',result)#  ввывод чисел
+
+    
+
+
+
+if __name__== "__main__":
     main()
